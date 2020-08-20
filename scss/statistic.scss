@@ -1,0 +1,39 @@
+.section-statistic{
+    background-color: #10c9c3;
+    
+    & .section-inner{
+        width: 100%;
+        height: 240px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+    
+    .section-statistic-content{
+        width: 315px;
+        height: auto;
+        flex-basis: 315;
+        flex-grow: 1;
+        &_number,
+        &_text{
+            color: #fff;
+            padding-bottom: 5px;
+            font-size: 12pt;
+        }
+        
+        &_number{
+            font-size: 18pt;
+        }
+        
+        & img{
+            float: left;
+            padding-right: 20px;
+            padding-left: 20px;
+            width: 50px;
+            height: 50px;
+        }
+   }
+}

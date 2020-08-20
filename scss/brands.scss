@@ -1,0 +1,30 @@
+.section-brands{
+    
+    & .section-inner{
+        padding-top: 65px;
+        padding-bottom: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
+    &_items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-grow: 1;
+        padding-right: 50px;
+        padding-left: 50px;
+        flex-wrap: wrap;
+        align-content: stretch;
+        
+        & img{
+            padding: 10px;
+            width: 130px;
+            height: auto;
+            flex-basis: 130px;
+        }
+    }
+} 

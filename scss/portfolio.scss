@@ -1,0 +1,76 @@
+.section-portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    & .section-inner{
+        max-width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &_items{
+        max-width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+        
+        &-item{
+            display: block;
+            width: 300px;
+            height: auto;
+            flex-basis: 300px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            position: relative;
+            
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, .5);
+                opacity: 0;
+            }
+            
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('../img/eye.png') no-repeat;
+                background-position: center center;
+                opacity: 0;
+            }
+            
+            &:hover:before,
+            &:hover:after{
+                opacity: 1;
+            }
+        }
+    }
+    
+    &_more{
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: #9c9c9c;
+        background-color: #f5f5f5;
+        font-size: 12pt;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
