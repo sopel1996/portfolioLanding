@@ -1,6 +1,7 @@
 .section-inner {
     max-width: 1300px;
     margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 a{
@@ -18,8 +19,10 @@ a{
 }
 
 .text-title{
+    text-align: center;
     font-size: 30pt;
     padding-bottom: 40px;
+    font-weight: 600;
 
 }
 
@@ -33,4 +36,20 @@ a{
 
 ul{
     list-style: none;
+}
+@media (max-width: 570px) {
+    .text-title{
+
+        font-size: 25pt;
+    }
+
+    .btn{
+        width: 150px;
+        height: 55px;
+        font-size: 10pt;
+        background-color: #10c9c3;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
 }

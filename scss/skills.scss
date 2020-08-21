@@ -49,4 +49,10 @@
         }
     }
 
+    @media (max-width: 700px){
+        &_progress {
+            align-items: center;
+            max-width: 100%;
+        }
+    }
 }
